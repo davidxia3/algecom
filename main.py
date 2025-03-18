@@ -51,7 +51,10 @@ for n in range(2,8):
         output = output + negative_flag + str(first_coeff) + " * A_" + str(weyl_num) + " X^" + str(first_power) + " + "
         
 
-    output = output + " ..."
+    output = output + " ... \n"
     print(output)
+
+    with open("output.txt", "a") as file:
+        file.write(output)
 
         
